@@ -14,7 +14,7 @@
 
 body{
     background-color: white;
-
+    height: 100vh;
 }
 
 
@@ -23,10 +23,6 @@ body{
       max-width: 1740px;
       margin: 0 auto;
       margin-top: 120px;
-    }
-
-    .input {
-      @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-gray pl-5 max-sm:p-5 outline-none sm:border-none border max-sm:border-slate-gray max-sm:rounded-full;
     }
 
     .transitioning {
@@ -45,66 +41,25 @@ body{
     }
 
     .head_text {
-      @apply mt-5 text-6xl font-extrabold leading-[1.15] text-black sm:text-6xl;
+      @apply mt-5 xl:text-4xl font-extrabold xl:leading-[1.4] text-green-900 sm:text-3xl;
     }
 
-    .logo_text {
-      @apply max-sm:hidden font-semibold text-lg text-white tracking-wide;
+    .heading_color {
+        @apply text-green-900
     }
 
-    .desc {
-      @apply mt-5 text-lg text-gray-600 sm:text-xl max-w-2xl;
+    .subheading_text {
+        @apply text-green-900 text-3xl font-extrabold;
     }
 
-    .font-semi-thick{
-      @apply font-light;
+    .subhead_text {
+        @apply text-gray-500 tracking-widest leading-6 text-lg
     }
 
-    .text-semi-dark{
-      @apply text-slate-900;
+    .sub_text {
+        @apply text-gray-500 tracking-wide leading-6 text-base
     }
 
-    .padding-x {
-      @apply sm:px-16 px-8;
-    }
-
-    .padding-y {
-      @apply sm:py-24 py-12;
-    }
-
-    .padding-l {
-      @apply sm:pl-16 pl-8;
-    }
-
-    .padding-r {
-      @apply sm:pr-16 pr-8;
-    }
-
-    .padding-t {
-      @apply sm:pt-24 pt-12;
-    }
-
-    .padding-b {
-      @apply sm:pb-24 pb-12;
-    }
-
-
-    .border-card{
-      @apply ring-stone-800 ring-[12px] rounded-lg;
-    }
-
-    .ul-li-style{
-      @apply hover:text-coral-red transitioning p-4 hover:shadow-shadow-1;
-    }
-
-    /* Custom Checkbox Styling */
-    .checkbox {
-      @apply appearance-none h-4 w-4 border-none rounded bg-gray-200 checked:bg-red-500 checked:ring-0;
-    }
-
-    .checkbox:focus {
-        @apply ring-2 ring-red-500;
-    }
 
     .download-btn {
       @apply p-3 rounded-md bg-gradient-to-r from-violet-500 to-fuchsia-500;

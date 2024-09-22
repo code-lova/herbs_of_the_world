@@ -1,4 +1,4 @@
-<nav x-data="{ open: false, dropdownOpen: false }" class="bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700">
+<nav x-data="{ open: false, dropdownOpen: false }" class="bg-section-color dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700 fixed top-0 w-full z-50">
     <div class="w-full h-20 px-4 sm:px-2 lg:px-12 shadow-md shadow-gray-200">
         <div class="flex justify-between items-center h-16 mt-8">
             <div class="flex -space-x-5">

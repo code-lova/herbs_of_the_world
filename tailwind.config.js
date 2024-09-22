@@ -18,7 +18,7 @@ export default {
             xl: ['20px', '24.38px'],
             '2xl': ['24px', '29.26px'],
             '3xl': ['28px', '50px'],
-            '4xl': ['48px', '58px'],
+            '4xl': ['52px', '58px'],
             '6xl': ['68px', '78px'],
             '8xl': ['96px', '106px']
         },
@@ -30,8 +30,8 @@ export default {
             colors: {
                 'secondry': "#080101",
                 'primary': "#006600",
-                "slate-gray": "#5f583d",
-                "green-0": "#56ecb2",
+                "section-color": "#fafaf5",
+                "yellow": "#ffc266",
             },
         },
     },
