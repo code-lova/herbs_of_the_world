@@ -44,6 +44,11 @@ body{
       @apply mt-5 xl:text-4xl font-extrabold xl:leading-[1.4] text-green-900 sm:text-3xl;
     }
 
+    .subhead_text {
+        @apply text-gray-500 tracking-widest leading-6 text-lg
+    }
+
+
     .heading_color {
         @apply text-green-900
     }
@@ -52,13 +57,16 @@ body{
         @apply text-green-900 text-3xl font-extrabold;
     }
 
-    .subhead_text {
-        @apply text-gray-500 tracking-widest leading-6 text-lg
+    .sub_text {
+        @apply text-gray-600 tracking-wide leading-6 text-base;
     }
 
-    .sub_text {
-        @apply text-gray-500 tracking-wide leading-6 text-base
+    .featured_text{
+        @apply text-green-900 text-2xl font-bold;
     }
+
+
+
 
 
     .download-btn {

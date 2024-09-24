@@ -107,9 +107,32 @@
                 </p>
             </div>
 
+            @include('inc.frontend.popular_products')
         </div>
     </section>
 
+
+    <section class="w-full h-auto bg-section-color py-14">
+        <div class="px-32">
+
+            @include('inc.frontend.promotion')
+        </div>
+    </section>
+
+
+
+    <section class="w-full h-auto bg-white py-14">
+        <div class="px-32">
+            <div class=" mt-20">
+                <h1 class="text-center subheading_text">Your Trust is Our Top Concern</h1>
+            </div>
+           <div class="mt-4 text-center sub_text mb-16">
+                <p>Feugiat sed lectus vestibulum mattis ullamcorper velit.</p>
+                <p>Sed pulvinar proin gravida hendrerit lectus</p>
+           </div>
+            @include('inc.frontend.testimonials')
+        </div>
+    </section>
 
 
 </x-frontend-layout>

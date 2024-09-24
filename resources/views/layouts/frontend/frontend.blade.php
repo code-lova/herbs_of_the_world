@@ -12,11 +12,14 @@
     </head>
     <body class="font-sans antialiased text-black">
         @include('layouts.frontend.navbar')
-        
+
 
          <!-- Page Content -->
          <main>
             {{ $slot }}
         </main>
+
+
+        @yield('countdown')
     </body>
 </html>
