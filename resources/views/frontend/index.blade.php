@@ -113,17 +113,21 @@
 
 
     <section class="w-full h-auto bg-section-color py-14">
-        <div class="px-32">
+        <div class="px-10 lg:px-32">
 
             @include('inc.frontend.promotion')
         </div>
     </section>
 
+    <section class="w-full h-auto bg-white py-2 mt-16">
 
+        @include('inc.frontend.about_us')
 
-    <section class="w-full h-auto bg-white py-14">
-        <div class="px-32">
-            <div class=" mt-20">
+    </section>
+
+    <section class="w-full h-auto bg-white py-2">
+        <div class="px-6 lg:px-32">
+            <div class="mt-20">
                 <h1 class="text-center subheading_text">Your Trust is Our Top Concern</h1>
             </div>
            <div class="mt-4 text-center sub_text mb-16">
@@ -133,6 +137,24 @@
             @include('inc.frontend.testimonials')
         </div>
     </section>
+
+    <section class="w-full h-auto bg-white">
+
+        <div class="mt-2">
+            <h1 class="text-center subheading_text">Google Ratings and Review</h1>
+        </div>
+        <div class="mt-4 text-center sub_text mb-16">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, in.</p>
+       </div>
+    </section>
+
+    <section class="w-full h-auto bg-gray-300 py-10">
+        <div class="mt-2 text-black font-extrabold text-xl">
+            <h1>Subscribe for the latest health advice, insights, and discounts!</h1>
+        </div>
+    </section>
+
+
 
 
 </x-frontend-layout>

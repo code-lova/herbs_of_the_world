@@ -58,7 +58,7 @@ body{
     }
 
     .sub_text {
-        @apply text-gray-600 tracking-wide leading-6 text-base;
+        @apply text-gray-600 tracking-wide leading-7 text-base;
     }
 
     .featured_text{

@@ -9,36 +9,36 @@
             <p class="heading_color font-bold text-4xl">$300</p>
         </div>
 
-        <div x-data="countdown()" x-init="startCountdown()" class="flex flex-row items-start space-x-6 mt-4">
+        <div x-data="countdown()" x-init="startCountdown()" class="flex flex-row items-start space-x-4 mt-4">
             <!-- Days Box -->
-            <div class="border border-green-900 rounded-md w-[100px] h-[80px] py-2 px-6">
-                <div class="text-center">
-                    <p class="heading_color font-extrabold text-xl mb-1" x-text="days">00</p>
-                    <p class="sub_text">Days</p>
+            <div class="border border-green-900 rounded-md w-[60px] h-[50px] lg:w-[100px] lg:h-[80px] ">
+                <div class="flex flex-col items-center lg:text-center lg:mt-2">
+                    <p class="heading_color font-extrabold text-base lg:text-xl mt-1" x-text="days">00</p>
+                    <p class="sub_text sm:text-sm">Days</p>
                 </div>
             </div>
 
             <!-- Hours Box -->
-            <div class="border border-green-900 rounded-md w-[100px] h-[80px] py-2 px-6">
-                <div class="text-center">
-                    <p class="heading_color font-extrabold text-xl mb-1" x-text="hours">00</p>
-                    <p class="sub_text">Hours</p>
+            <div class="border border-green-900 rounded-md w-[60px] h-[50px] lg:w-[100px] lg:h-[80px]">
+                <div class="flex flex-col items-center lg:text-center lg:mt-2">
+                    <p class="heading_color font-extrabold text-base lg:text-xl mt-1" x-text="hours">00</p>
+                    <p class="sub_text sm:text-sm">Hours</p>
                 </div>
             </div>
 
             <!-- Minutes Box -->
-            <div class="border border-green-900 rounded-md w-[100px] h-[80px] py-2 px-6">
-                <div class="text-center">
-                    <p class="heading_color font-extrabold text-xl mb-1" x-text="minutes">00</p>
-                    <p class="sub_text">Mins</p>
+            <div class="border border-green-900 rounded-md w-[60px] h-[50px] lg:w-[100px] lg:h-[80px]">
+                <div class="flex flex-col items-center lg:text-center lg:mt-2">
+                    <p class="heading_color font-extrabold text-base lg:text-xl mt-1" x-text="minutes">00</p>
+                    <p class="sub_text sm:text-sm">Mins</p>
                 </div>
             </div>
 
             <!-- Seconds Box -->
-            <div class="border border-green-900 rounded-md w-[100px] h-[80px] py-2 px-6">
-                <div class="text-center">
-                    <p class="heading_color font-extrabold text-xl mb-1" x-text="seconds">00</p>
-                    <p class="sub_text">Secs</p>
+            <div class="border border-green-900 rounded-md w-[60px] h-[50px] lg:w-[100px] lg:h-[80px]">
+                <div class="flex flex-col items-center lg:text-center lg:mt-2">
+                    <p class="heading_color font-extrabold text-base lg:text-xl mb-1" x-text="seconds">00</p>
+                    <p class="sub_text sm:text-sm">Secs</p>
                 </div>
             </div>
         </div>
@@ -49,7 +49,7 @@
             </button>
         </div>
     </div>
-    <div class="items-center mx-auto">
+    <div class="items-center mx-auto mt-16 lg:mt-0">
         <img
             src="{{ asset('/images/countdown.webp') }}"
             alt="Herbs for dogs"
