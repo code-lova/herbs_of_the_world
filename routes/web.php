@@ -23,6 +23,11 @@ Route::controller(\App\Http\Controllers\Frontend\FrontendController::class)->gro
     Route::get('/', 'index')->name('index.home');
 });
 
+Route::controller(\App\Http\Controllers\SocialLoginController::class)->group(function() {
+    Route::get('socialite/{driver}', 'toProvider')->where('driver', 'google');
+    Route::get('auth/{driver}/login', 'handleCallBack')->where('driver', 'google');
+
+});
 
 
 require __DIR__.'/auth.php';

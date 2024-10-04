@@ -26,7 +26,7 @@
         <!-- Text Wrapper with Equal Height and Width -->
         <div class="flex flex-col justify-center bg-white py-2 px-8 w-full h-full rounded-md">
             <h1 class="subheading_text">Who We Are</h1>
-            <div class=" mt-2 sub_text">
+            <div class=" mt-2 sub_text mb-8">
                 <p>
                     Herbs of the World is a company driven by Loryhl Davis,
                     a passionate Canadian herbalist with over 40 years of experience.

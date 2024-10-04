@@ -43,5 +43,20 @@
                 {{ __('Log in') }}
             </x-primary-button>
         </div>
+
+        <div class="mx-3 flex flex-1 justify-center mt-8">
+            <a href="/socialite/google">
+                <x-secondary-button class="flex flex-1 item-center gap-2 w-[250px]">
+                    <img
+                        src="{{ asset('/images/google.png') }}" alt="google"
+                        width="40"
+                        height="40"
+                        class="object-contain"
+                    />
+                    <p class="text-xs">Login with google</p>
+                </x-secondary-button>
+            </a>
+        </div>
+
     </form>
 </x-guest-layout>

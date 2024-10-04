@@ -143,15 +143,30 @@
         <div class="mt-2">
             <h1 class="text-center subheading_text">Google Ratings and Review</h1>
         </div>
-        <div class="mt-4 text-center sub_text mb-16">
+        <div class="mt-4 text-center sub_text mb-16 px-6">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, in.</p>
        </div>
     </section>
 
-    <section class="w-full h-auto bg-gray-300 py-10">
-        <div class="mt-2 text-black font-extrabold text-xl">
-            <h1>Subscribe for the latest health advice, insights, and discounts!</h1>
+    <section class="w-full h-auto bg-white mb-20">
+        <div class="px-6 lg:px-32">
+            <div class="mt-20">
+                <h1 class="text-center subheading_text">Have Any Questions ?</h1>
+            </div>
+           <div class="mt-4 text-center sub_text mb-8 md:w-2/4 mx-auto">
+                <p>FElementum eu facilisis sed odio morbi quis commodo odio. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque</p>
+           </div>
+
+           @include('inc.frontend.questions')
         </div>
+    </section>
+
+    <section class="w-full h-auto bg-gray-300 py-10">
+       @include('inc.frontend.subscription')
+    </section>
+
+    <section class="w-full h-auto bg-green-900 py-14">
+        @include('inc.frontend.footer')
     </section>
 
 

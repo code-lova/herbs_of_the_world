@@ -18,7 +18,7 @@
 
                     <div class="relative" x-data="{ dropdownOpen: false }">
                         <button @click="dropdownOpen = !dropdownOpen" class="text-primary font-bold dark:text-white hover:text-green-700 dark:hover:text-gray-300">
-                            Herbal Shop
+                            Shop
                             <svg class="w-5 h-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
@@ -66,7 +66,7 @@
                         class="text-white object-contain"
                     />
                 </a>
-                <a href="#" class="bg-primary p-1 rounded-full">
+                <a href={{ url('/login') }} class="bg-primary p-1 rounded-full" title="login">
                     <img
                         src="{{ asset('/images/profile.png') }}" alt="Search Icon"
                         width="30"
@@ -117,7 +117,7 @@
 
             <div class="relative" x-data="{ dropdownOpen: false }">
                 <button @click="dropdownOpen = !dropdownOpen" class="text-primary font-bold dark:text-white hover:text-green-700 dark:hover:text-gray-300">
-                    Herbal Shop
+                    Shop
                     <svg class="w-5 h-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                     </svg>

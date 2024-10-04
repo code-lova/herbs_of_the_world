@@ -73,14 +73,16 @@ body{
       @apply p-3 rounded-md bg-gradient-to-r from-violet-500 to-fuchsia-500;
     }
 
-
+    .form-control{
+        @apply p-4 w-[300px] xl:w-[300px] shadow-inner bg-gray-200 outline-none rounded-lg border-2 border-transparent focus:border-green-800;
+    }
 
     .textarea-control{
       @apply p-4 w-[300px] xl:w-[630px] h-[200px] shadow-inner bg-gray-200 outline-none mt-2 rounded-lg focus-within:border-2 border-pink-500;
     }
 
     .form-button {
-      @apply bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 text-white py-4 px-4 rounded;
+      @apply bg-gradient-to-r from-green-400 to-blue-500 hover:from-green-500 hover:to-green-900 text-white py-3 px-3 rounded;
     }
 
   }
