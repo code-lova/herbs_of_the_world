@@ -13,6 +13,7 @@
                     </button>
                 </div>
 
+
                 <div class="w-full grid grid-cols-2 mt-8 gap-1">
                     <!-- Delivery Icon Section -->
                     <div class="flex flex-row items-center gap-2">
@@ -69,26 +70,27 @@
                     </div>
                 </div>
             </div>
-            <div class="hidden lg:flex justify-center">
+            <div class="hidden lg:flex justify-center mt-8 relative">
                 <img
-                    src="{{ asset('/images/horse-rider.png') }}"
+                    src="{{ asset('/images/herbs-of-the-world.webp') }}"
                     alt="Search Icon"
-                    class="object-cover xl:w-[700px] xl:h-[660px] lg:w-[500px] h-[500px]"
+                    class="object-fit xl:w-[700px] xl:h-[550px] lg:w-[500px] h-[500px] rounded-lg"
                 />
+                <div class="absolute inset-0 bg-gradient-to-r from-black/300 to-transparent"></div>
             </div>
         </div>
     </section>
+
 
     <section class="w-full h-auto bg-white py-14">
         <div class="px-10">
             <h1 class="text-center subheading_text">Featured Categories</h1>
             <div class="mt-4">
-                <p class="sub_text text-center">
+                <p class="mt-4 text-center sub_text mb-8 md:w-2/4 mx-auto">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                </p>
-                <p class="sub_text text-center">
                     Nesciunt quam deleniti reprehenderit magnam voluptatum natus
                 </p>
+
             </div>
 
             @include('inc.frontend.featured_category')
@@ -99,10 +101,8 @@
         <div class="px-10">
             <h1 class="text-center subheading_text">Popular Products</h1>
             <div class="mt-4">
-                <p class="sub_text text-center">
+                <p class="mt-4 text-center sub_text mb-8 md:w-2/4 mx-auto">
                     Suscipit tellus mauris a diam maecenas sed enim ut sem.
-                </p>
-                <p class="sub_text text-center">
                     Turpis egestas maecenas pharetra convallis posuere
                 </p>
             </div>

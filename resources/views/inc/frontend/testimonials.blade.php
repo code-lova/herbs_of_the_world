@@ -7,7 +7,7 @@
     >
         <!-- Individual Slide Group -->
         <div class="flex flex-none w-full space-x-5">
-            <a href="{{ url('/') }}" class="flex flex-col text-center w-[400px] h-[300px] rounded-lg shadow-lg shadow-green-200 p-6">
+            <a href="{{ url('/') }}" class="flex flex-col text-center w-[500px] h-[300px] rounded-lg shadow-lg shadow-green-200 p-6">
                 <img
                     src="{{ asset('/images/avatar.png') }}"
                     alt="avatar"
@@ -17,7 +17,7 @@
                 <p class="mb-4 sub_text line-clamp-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum sunt nemo commodi ad pariatur. Sunt.</p>
                 <p class="heading_color font-bold text-base">Luiz Mendez</p>
             </a>
-            <a href="{{ url('/') }}" class="flex flex-col text-center w-[400px] h-[300px] rounded-lg shadow-lg shadow-green-200 p-6">
+            <a href="{{ url('/') }}" class="flex flex-col text-center w-[500px] h-[300px] rounded-lg shadow-lg shadow-green-200 p-6">
                 <img
                     src="{{ asset('/images/avatar.png') }}"
                     alt="avatar"
@@ -27,7 +27,7 @@
                 <p class="mb-4 sub_text line-clamp-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum sunt nemo commodi ad pariatur. Sunt.</p>
                 <p class="heading_color font-bold text-base">Luiz Mendez</p>
             </a>
-            <a href="{{ url('/') }}" class="flex flex-col text-center w-[400px] h-[300px] rounded-lg shadow-lg shadow-green-200 p-6">
+            <a href="{{ url('/') }}" class="flex flex-col text-center w-[500px] h-[300px] rounded-lg shadow-lg shadow-green-200 p-6">
                 <img
                     src="{{ asset('/images/avatar.png') }}"
                     alt="avatar"
@@ -40,7 +40,7 @@
         </div>
         <!-- Repeat this block for additional slides -->
         <div class="flex flex-none w-full space-x-5">
-            <a href="{{ url('/') }}" class="flex flex-col text-center w-[400px] h-[300px] rounded-lg shadow-lg shadow-green-200 p-6">
+            <a href="{{ url('/') }}" class="flex flex-col text-center w-[500px] h-[300px] rounded-lg shadow-lg shadow-green-200 p-6">
                 <img
                     src="{{ asset('/images/avatar.png') }}"
                     alt="avatar"
@@ -50,7 +50,7 @@
                 <p class="mb-4 sub_text line-clamp-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum sunt nemo commodi ad pariatur. Sunt.</p>
                 <p class="heading_color font-bold text-base">Luiz Mendez</p>
             </a>
-            <a href="{{ url('/') }}" class="flex flex-col text-center w-[400px] h-[300px] rounded-lg shadow-lg shadow-green-200 p-6">
+            <a href="{{ url('/') }}" class="flex flex-col text-center w-[500px] h-[300px] rounded-lg shadow-lg shadow-green-200 p-6">
                 <img
                     src="{{ asset('/images/avatar.png') }}"
                     alt="avatar"
@@ -60,7 +60,7 @@
                 <p class="mb-4 sub_text line-clamp-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum sunt nemo commodi ad pariatur. Sunt.</p>
                 <p class="heading_color font-bold text-base">Luiz Mendez</p>
             </a>
-            <a href="{{ url('/') }}" class="flex flex-col text-center w-[400px] h-[300px] rounded-lg shadow-lg shadow-green-200 p-6">
+            <a href="{{ url('/') }}" class="flex flex-col text-center w-[500px] h-[300px] rounded-lg shadow-lg shadow-green-200 p-6">
                 <img
                     src="{{ asset('/images/avatar.png') }}"
                     alt="avatar"

@@ -1,5 +1,5 @@
 <!-- Modified Container with Equal Height and Width for Image and Text Wrappers -->
-<div class="bg-green-900 w-full max-w-[450px] md:max-w-[768px] lg:max-w-[1200px] rounded-xl mx-auto p-4 lg:p-14 md:px-8 lg:px-4 ">
+<div class="bg-green-900 w-full  md:max-w-[768px] lg:max-w-[1200px] rounded-xl mx-auto p-4 lg:p-14 md:px-8 lg:px-4 ">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-2 items-center">
 
         <!-- Image Wrapper with Equal Height and Width -->
@@ -13,8 +13,8 @@
                 >
                 <img
                     class="lazy object-contain w-full h-full rounded-md"
-                    data-src="{{ asset('images/abtus.jpg') }}"
-                    src="{{ asset('images/abtus.jpg') }}"
+                    data-src="{{ asset('images/abtus.webp') }}"
+                    src="{{ asset('images/abtus.webp') }}"
                     alt="Loryhl Davis"
                     width="700"
                     height="700"

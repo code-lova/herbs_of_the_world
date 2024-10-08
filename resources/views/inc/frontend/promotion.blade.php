@@ -11,7 +11,7 @@
 
         <div x-data="countdown()" x-init="startCountdown()" class="flex flex-row items-start space-x-4 mt-4">
             <!-- Days Box -->
-            <div class="border border-green-900 rounded-md w-[60px] h-[50px] lg:w-[100px] lg:h-[80px] ">
+            <div class="border border-green-900 rounded-md w-[60px] h-[60px] lg:w-[100px] lg:h-[80px] ">
                 <div class="flex flex-col items-center lg:text-center lg:mt-2">
                     <p class="heading_color font-extrabold text-base lg:text-xl mt-1" x-text="days">00</p>
                     <p class="sub_text sm:text-sm">Days</p>
@@ -19,7 +19,7 @@
             </div>
 
             <!-- Hours Box -->
-            <div class="border border-green-900 rounded-md w-[60px] h-[50px] lg:w-[100px] lg:h-[80px]">
+            <div class="border border-green-900 rounded-md w-[60px] h-[60px] lg:w-[100px] lg:h-[80px]">
                 <div class="flex flex-col items-center lg:text-center lg:mt-2">
                     <p class="heading_color font-extrabold text-base lg:text-xl mt-1" x-text="hours">00</p>
                     <p class="sub_text sm:text-sm">Hours</p>
@@ -27,7 +27,7 @@
             </div>
 
             <!-- Minutes Box -->
-            <div class="border border-green-900 rounded-md w-[60px] h-[50px] lg:w-[100px] lg:h-[80px]">
+            <div class="border border-green-900 rounded-md w-[60px] h-[60px] lg:w-[100px] lg:h-[80px]">
                 <div class="flex flex-col items-center lg:text-center lg:mt-2">
                     <p class="heading_color font-extrabold text-base lg:text-xl mt-1" x-text="minutes">00</p>
                     <p class="sub_text sm:text-sm">Mins</p>
@@ -35,7 +35,7 @@
             </div>
 
             <!-- Seconds Box -->
-            <div class="border border-green-900 rounded-md w-[60px] h-[50px] lg:w-[100px] lg:h-[80px]">
+            <div class="border border-green-900 rounded-md w-[60px] h-[60px] lg:w-[100px] lg:h-[80px]">
                 <div class="flex flex-col items-center lg:text-center lg:mt-2">
                     <p class="heading_color font-extrabold text-base lg:text-xl mb-1" x-text="seconds">00</p>
                     <p class="sub_text sm:text-sm">Secs</p>

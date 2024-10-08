@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('social_logins', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('user_id');
+            $table->string('provider');
+            $table->string('provider_id');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }

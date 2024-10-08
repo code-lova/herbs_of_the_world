@@ -11,18 +11,28 @@
           @vite(['resources/css/app.css', 'resources/js/app.js'])
           <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
     </head>
-    <body class="font-sans antialiased text-black">
-        @include('layouts.frontend.navbar')
+    <body class="font-sans antialiased bg-gray-100 text-black">
 
+        @include('inc.backend.navbar')
+
+        @include('inc.backend.sidebar')
 
          <!-- Page Content -->
          <main>
             {{ $slot }}
         </main>
 
-
-        @yield('countdown')
-
         <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@9.0.3"></script>
+
+        <script>
+            if (document.getElementById("search-table") && typeof simpleDatatables.DataTable !== 'undefined') {
+                const dataTable = new simpleDatatables.DataTable("#search-table", {
+                    searchable: true,
+                    sortable: false
+                });
+            }
+        </script>
+
     </body>
 </html>

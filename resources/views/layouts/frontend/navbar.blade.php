@@ -1,4 +1,6 @@
+
 <nav x-data="{ open: false, dropdownOpen: false }" class="bg-section-color dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700 fixed top-0 w-full z-50">
+
     <div class="w-full h-20 px-4 sm:px-2 lg:px-12 shadow-md shadow-gray-200">
         <div class="flex justify-between items-center h-16 mt-8">
             <div class="flex -space-x-5">
@@ -56,32 +58,43 @@
                 </div>
             </div>
 
-            <!-- Icons (Desktop) -->
-            <div class="hidden xl:flex lg:flex items-center space-x-6">
-                <a href="#" class="bg-primary p-1 rounded-full">
-                    <img
-                        src="{{ asset('/images/search.png') }}" alt="Search Icon"
-                        width="30"
-                        height="30"
-                        class="text-white object-contain"
-                    />
-                </a>
-                <a href={{ url('/login') }} class="bg-primary p-1 rounded-full" title="login">
-                    <img
-                        src="{{ asset('/images/profile.png') }}" alt="Search Icon"
-                        width="30"
-                        height="30"
-                        class="text-white object-contain"
-                    />
-                </a>
-                <a href="#" class="bg-primary p-1 rounded-full">
-                    <img
-                        src="{{ asset('/images/cart.png') }}" alt="Search Icon"
-                        width="30"
-                        height="30"
-                        class="text-white object-contain"
-                    />
-                </a>
+
+             <!-- Authenticated or Guest -->
+             <div class="hidden xl:flex lg:flex items-center space-x-6">
+                @auth
+                    <!-- Icons for Authenticated Users -->
+                    <a href="#" class="bg-primary p-1 rounded-full">
+                        <img src="{{ asset('/images/search.png') }}" alt="Search Icon" width="30" height="30" class="text-white object-contain"/>
+                    </a>
+                    <div class="relative" x-data="{ profileDropdown: false }">
+                        <button @click="profileDropdown = !profileDropdown" class="bg-primary p-1 rounded-full" title="Profile">
+                            <img
+                                src="{{ asset('/images/profile.png') }}" alt="Profile Icon"
+                                width="30"
+                                height="30"
+                                class="text-white object-contain"
+                            />
+                        </button>
+                        <!-- Dropdown Menu for Profile -->
+                        <div x-show="profileDropdown" @click.away="profileDropdown = false" class="absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-gray-800 z-10">
+                            <a href="{{ route('dashboard') }}" class="block px-4 py-2 text-secondry font-semibold dark:text-white hover:bg-green-100 dark:hover:bg-gray-700">Profile</a>
+                            <a href="#" class="block px-4 py-2 text-secondry font-semibold dark:text-white hover:bg-green-100 dark:hover:bg-gray-700">Settings</a>
+                            <form action="{{ route('logout') }}" method="POST" class="inline ">
+                                @csrf
+                                <button type="submit" class="cursor-pointer w-full block px-4 py-2 text-secondry font-semibold dark:text-white hover:bg-red-100 dark:hover:bg-gray-700">
+                                    Logout
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <a href="#" class="bg-primary p-1 rounded-full">
+                        <img src="{{ asset('/images/cart.png') }}" alt="Cart Icon" width="30" height="30" class="text-white object-contain"/>
+                    </a>
+                @else
+                    <!-- Login & Register Buttons for Guests -->
+                    <a href="{{ route('login') }}" class="text-primary font-bold dark:text-white hover:text-gray-700 dark:hover:text-gray-300">Login</a>
+                    <a href="{{ route('register') }}" class="text-primary font-bold dark:text-white hover:text-gray-700 dark:hover:text-gray-300">Register</a>
+                @endauth
             </div>
 
             <!-- Hamburger Menu (Mobile only) -->
@@ -151,35 +164,31 @@
             <a href="{{ url('/contact') }}" class="block text-primary font-bold dark:text-white">Contact</a>
         </div>
 
-        <!-- Mobile Icons -->
-        <div class="pt-4 pb-1 border-t border-gray-200 dark:border-gray-600">
-            <div class="flex items-center space-x-4">
-                <a href="#" class="bg-primary p-1 rounded-full ml-3">
-                    <img
-                        src="{{ asset('/images/search.png') }}" alt="Search Icon"
-                        width="30"
-                        height="30"
-                        class="text-white object-contain"
-                    />
-                </a>
 
-                <a href="#" class="bg-primary p-1 rounded-full">
-                    <img
-                        src="{{ asset('/images/profile.png') }}" alt="Search Icon"
-                        width="30"
-                        height="30"
-                        class="text-white object-contain"
-                    />
-                </a>
-                <a href="#" class="bg-primary p-1 rounded-full">
-                    <img
-                        src="{{ asset('/images/cart.png') }}" alt="Search Icon"
-                        width="30"
-                        height="30"
-                        class="text-white object-contain"
-                    />
-                </a>
+
+           <!-- Mobile Icons or Login/Register -->
+           <div class="pt-4 pb-1 border-t border-gray-200 dark:border-gray-600">
+            <div class="flex items-center space-x-4">
+                @auth
+                    <!-- Icons for Authenticated Users (Mobile) -->
+                    <a href="#" class="bg-primary p-1 rounded-full ml-3">
+                        <img src="{{ asset('/images/search.png') }}" alt="Search Icon" width="30" height="30" class="text-white object-contain"/>
+                    </a>
+                    <a href="{{ route('dashboard') }}" class="bg-primary p-1 rounded-full">
+                        <img src="{{ asset('/images/profile.png') }}" alt="Profile Icon" width="30" height="30" class="text-white object-contain"/>
+                    </a>
+                    <a href="#" class="bg-primary p-1 rounded-full">
+                        <img src="{{ asset('/images/cart.png') }}" alt="Cart Icon" width="30" height="30" class="text-white object-contain"/>
+                    </a>
+                @else
+                    <!-- Login & Register for Guests (Mobile) -->
+                    <a href="{{ route('login') }}" class="text-primary px-6 py-3 font-bold dark:text-white">Login</a>
+                    <a href="{{ route('register') }}" class="text-primary font-bold dark:text-white">Register</a>
+                @endauth
             </div>
+           </div>
         </div>
     </div>
 </nav>
+
+
