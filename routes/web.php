@@ -1,13 +1,21 @@
 <?php
 
-use App\Http\Controllers\Controller;
-use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\App;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Artisan;
+use App\Http\Controllers\ProfileController;
 
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+
+Route::get('/clear', function() {
+    Artisan::call('cache:clear');
+    Artisan::call('config:cache');
+    Artisan::call('view:clear');
+    return "Cleared!";
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
