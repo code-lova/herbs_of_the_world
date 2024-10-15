@@ -3,9 +3,9 @@
     <a href="">
         <div class=" py-8 lg:py-2 px-4 w-[300px]">
             <img
-                src="{{ asset('/images/horses.webp') }}"
+                src="{{ asset('/images/horses2.png') }}"
                 alt="Search Icon"
-                class="rounded-xl object-fit w-[460px] h-[333px] transitioning mx-auto"
+                class="rounded-xl object-fit w-[200px] h-auto transitioning mx-auto"
             />
             <p class="mt-4 featured_text text-center">Herbs for Horses</p>
         </div>
@@ -13,9 +13,9 @@
     <a href="">
         <div class=" py-8 lg:py-2 px-4 w-[300px]">
             <img
-                src="{{ asset('/images/human.webp') }}"
+                src="{{ asset('/images/human2.png') }}"
                 alt="Search Icon"
-                class="rounded-xl object-fit w-[460px] h-[333px] transitioning mx-auto"
+                class="rounded-xl object-fit w-[200px] h-[auto] transitioning mx-auto shadow-lg"
             />
             <p class="mt-4 featured_text text-center">Herbs for Humans</p>
         </div>
@@ -23,9 +23,9 @@
     <a href="">
         <div class=" py-8 lg:py-2 px-4 w-[300px]">
             <img
-                src="{{ asset('/images/doggz.webp') }}"
+                src="{{ asset('/images/doggz2.png') }}"
                 alt="Search Icon"
-                class="rounded-xl object-fit w-[460px] h-[333px] transitioning mx-auto"
+                class="rounded-xl object-fit w-[200px] h-[auto] transitioning mx-auto shadow-lg"
             />
             <p class="mt-4 featured_text text-center">Herbs for Pets</p>
         </div>

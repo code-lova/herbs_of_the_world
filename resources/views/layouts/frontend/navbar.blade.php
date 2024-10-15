@@ -2,31 +2,31 @@
 <nav x-data="{ open: false, dropdownOpen: false }" class="bg-section-color dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700 fixed top-0 w-full z-50">
 
     <div class="w-full h-20 px-4 sm:px-2 lg:px-12 shadow-md shadow-gray-200">
-        <div class="flex justify-between items-center h-16 mt-8">
-            <div class="flex -space-x-5">
+        <div class="flex justify-between items-center h-16 mt-4">
+            <div class="flex justify-center items-center space-x-5">
                 <!-- Logo -->
-                <div class="-ml-10 flex items-center -mt-3">
+                <div class="flex items-center">
                     <a href="{{ url('/') }}">
-                        <img src={{ asset('/images/logo.png') }} alt="Logo" class="w-[170px] h-[160px]">
+                        <img src={{ asset('/images/logo.png') }} alt="Logo" class="w-[140px] h-[130px]">
                     </a>
                 </div>
 
                 <!-- Navigation Links (Desktop) -->
-                <div class="hidden lg:mt-14 lg:flex space-x-8 sm:space-x-4 sm:ml-10">
+                <div class="hidden lg:mt-1 lg:flex space-x-8 sm:space-x-4 sm:ml-10">
                     <a href="{{ url('/') }}" class="text-primary font-bold dark:text-white hover:text-gray-700 dark:hover:text-gray-300">Home</a>
                     <a href="{{ url('/') }}" class="text-primary font-bold dark:text-white hover:text-gray-700 dark:hover:text-gray-300">Affiliate</a>
 
                     <a href="{{ url('/') }}" class="text-primary font-bold dark:text-white hover:text-gray-700 dark:hover:text-gray-300">Blogs</a>
 
-                    <div class="relative" x-data="{ dropdownOpen: false }">
-                        <button @click="dropdownOpen = !dropdownOpen" class="text-primary font-bold dark:text-white hover:text-green-700 dark:hover:text-gray-300">
+                    <div class="relative" @mouseenter="dropdownOpen = true" @mouseleave="dropdownOpen = false" x-data="{ dropdownOpen: false }">
+                        <button class="text-primary font-bold dark:text-white hover:text-green-700 dark:hover:text-gray-300">
                             Shop
                             <svg class="w-5 h-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
                         <!-- Dropdown Menu (Herbal Shop) -->
-                        <div x-show="dropdownOpen" @click.away="dropdownOpen = false" class="absolute mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-gray-800 z-10">
+                        <div @mouseenter="dropdownOpen = true" @mouseleave="dropdownOpen = false" x-show="dropdownOpen" class="absolute mt-0 w-48 rounded-md shadow-lg bg-white dark:bg-gray-800 z-10">
                             <a href="/shop/men" class="block px-4 py-2 text-secondry font-semibold dark:text-white hover:bg-green-100 dark:hover:bg-gray-700">Herbs for Horses</a>
                             <a href="/shop/women" class="block px-4 py-2 text-secondry font-semibold dark:text-white hover:bg-green-100 dark:hover:bg-gray-700">Herbs for People</a>
                             <a href="/shop/kids" class="block px-4 py-2 text-secondry font-semibold dark:text-white hover:bg-green-100 dark:hover:bg-gray-700">Herbs for Pets</a>
@@ -34,15 +34,15 @@
                     </div>
 
                     <!-- Dropdown for Explore Menu -->
-                    <div class="relative" x-data="{ exploreOpen: false }"> <!-- Added Alpine.js binding here -->
-                        <button @click="exploreOpen = !exploreOpen" class="text-primary font-bold dark:text-white hover:text-green-700 dark:hover:text-gray-300">
+                    <div class="relative" @mouseenter="exploreOpen = true" @mouseleave="exploreOpen = false" x-data="{ exploreOpen: false }"> <!-- Added Alpine.js binding here -->
+                        <button class="text-primary font-bold dark:text-white hover:text-green-700 dark:hover:text-gray-300">
                             Explore
                             <svg class="w-5 h-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
                         <!-- Dropdown Menu (Explore) -->
-                        <div x-show="exploreOpen" @click.away="exploreOpen = false" class="absolute mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-gray-800 z-10">
+                        <div @mouseenter="exploreOpen = true" @mouseleave="exploreOpen = false" x-show="exploreOpen" class="absolute -mt-1 w-48 rounded-md shadow-lg bg-white dark:bg-gray-800 z-10">
                             <a href="/explore/nature" class="block px-4 py-2 font-semibold text-secondry dark:text-white hover:bg-green-100 dark:hover:bg-gray-700">Competitive Horse Trainers</a>
                             <a href="/explore/wellness" class="block px-4 py-2 font-semibold text-secondry dark:text-white hover:bg-green-100 dark:hover:bg-gray-700">How To Use</a>
                             <a href="/explore/remedies" class="block px-4 py-2 font-semibold text-secondry dark:text-white hover:bg-green-100 dark:hover:bg-gray-700">WholeSale</a>

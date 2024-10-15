@@ -20,6 +20,8 @@ body{
 
 
 
+
+
 @layer components {
     .app {
       max-width: 1740px;
@@ -47,6 +49,10 @@ body{
         pointer-events: none;
     }
 
+    .heading_text{
+        font-family: "Leckerli One", serif;
+    }
+
 
     .padding {
       @apply sm:px-8 sm:py-8 md:py-4 md:px-8 px-8 py-2;
@@ -57,7 +63,7 @@ body{
     }
 
     .head_text {
-      @apply mt-5 xl:text-4xl font-extrabold xl:leading-[1.4] text-green-900 sm:text-3xl;
+      @apply mt-5 xl:text-[68px] font-extrabold xl:leading-[1.4] text-green-900 sm:text-3xl;
     }
 
     .subhead_text {
